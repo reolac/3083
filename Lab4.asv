@@ -1,0 +1,36 @@
+%% Task 1
+
+close all, clear all, clc
+
+training = rand(400, 2) 
+
+class1 = zeros(200, 1)
+class2 = zeros(200, 1)+
+ctraining = [class1; class2]
+training = [training, ctraining]
+
+
+
+testing = randn(400, 2)*5;
+
+
+
+
+figure;
+hold;
+
+scatter(training(:,1), training(:,2));
+
+
+%% V Diagrams
+
+clear all 
+close all
+clc
+
+data = rand(20, 2);
+[x, y] = meshgrid(0:0.005:1, 0:0.005:1)
+
+for i = 1:size(x, 1)
+    for j = 1:size(y,2)
+        dist = ((data(:,1)-x(i,j)).^2+(data(:,2)-y(i,j)).^2);
