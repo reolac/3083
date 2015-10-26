@@ -1,8 +1,0 @@
-%% Task 1
-
-close all, clear all, clc
-
-X = randn(100000, 1);
-
-
-Y = (X(X > -1 & X < 1));

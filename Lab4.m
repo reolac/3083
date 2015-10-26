@@ -30,11 +30,11 @@ error = 0;
 for i = 1:size(C1)      
         g = C1(i,1) * (-1) + 2;
         g2 = C2(i,1) * (-1) + 2;
-        if C1(i,1) >= g & C1(i,2) >= g
+        if C1(i,1) == C1(i,1) & C1(i,2) >= g
             plot(C1(i,1),C1(i,2), 'ok')
             error = error + 1;
         end
-        if C2(i,1) <= g2 & C2(i,1) <= g2
+        if C2(i,1) == C2(i,1) & C2(i,2) <= g2
             plot(C2(i,1),C2(i,2), 'ok')
             error = error + 1;
         end
