@@ -5,6 +5,11 @@ close all, clear all, clc
 C1 = randn(200, 2);
 C2 = randn(200, 2) + 2;
 
+mC1 = mean(C1);
+mC2 = mean(C2);
+mp = (mC1 + mC2) / 2;
+
+
 figure
 hold on
 grid on
@@ -17,8 +22,6 @@ for i = 1:numel(X)
     Y(i) = X(i) * (-1) + 2;
 end
 
-Y(1)
--2 * (-1) + 5;
 
     
 
